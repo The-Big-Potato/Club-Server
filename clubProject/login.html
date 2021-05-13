@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Login - East Bay Mushroom Hunting Association</title>
+		<link rel="stylesheet" href="club.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="signUp.html">Sign Up</a></li>
+				<li><a href="clubActivity.html">Club Activities</a></li>
+			</ul>
+		</nav>
+		<main>
+			<header>
+				<h1  style="font-family:georgia">Login</h1>
+			</header>
+			<div id="constPop"></div>
+			<form action="" method="get" id="loginForm">
+					<label>Email: </label>
+					<input type="email" name="email" id="email" required>
+					<label>Password: </label>
+					<input type="password" name="password" id="password" required>
+					<input type="button" value="Log in" id="clubLogButton">
+			</form>
+		</main>
+		<footer> Copyright&copy; 2021 East Bay Mushroom Hunting Association</footer>
+		<script>
+			document.getElementById("clubLogButton").addEventListener("click", displayMessage);
+			
+			function displayMessage() {
+			var intro = "Welcome ";
+			var email = document.getElementById('email').value;
+			var end = ", the site is currently under construction.";
+			var message = intro.concat(email,end);
+
+			var textNode = document.createTextNode(message);
+			var newH = document.createElement("h3");
+			newH.appendChild(textNode);
+			newH.classList.add("popUpStyle"); 
+			
+			document.getElementById("constPop").appendChild(newH);
+			document.getElementById("clubLogButton").removeEventListener("click", displayMessage);
+			}
+		</script>
+	</body>
+</html>
+
+

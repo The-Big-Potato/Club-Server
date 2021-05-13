@@ -1,0 +1,16 @@
+{
+  "name": "staticsite",
+  "version": "1.0.0",
+  "description": "For Static site",
+  "main": "processIt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "commonmark": "^0.29.3",
+    "gray-matter": "^4.0.2",
+    "nunjucks": "^3.2.3"
+  }
+}

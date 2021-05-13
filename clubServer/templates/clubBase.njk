@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% block metaStuff %}
+		{% endblock %}
+		<link href="club.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+		{% if userRole == 'member' %}
+		{% include "navMember.njk" %}
+		
+		{% elif userRole == 'admin' %}
+		{% include "navAdmin.njk" %}
+		
+		{% else %}
+		{% include "navGuest.njk" %}
+		{% endif %}
+		</nav>
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+		<footer>
+			<p>Copyright&copy; 2021 East Bay Mushroom Hunting Association</p>
+		</footer>
+		<script>
+		{% block script %}{% endblock %}
+		</script>
+	</body>
+</html>
+

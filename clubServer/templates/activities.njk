@@ -1,0 +1,40 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>{{title}}</title>
+{% endblock %}
+    
+{% block main %}
+			<header>
+				<h1>Club Activities</h1>
+			</header>
+			<img src="images/mush2.jpg" alt="Morel Mushroom" style="width:30%;">
+			<h2>Activity Types</h2>
+			<ul>
+				<li>Nature Walks</li>
+				<li>Mushroom Identification</li>
+				<li>Cooking with Mushrooms</li>
+				<li>Medicinal Mushrooms</li>
+			</ul>
+			<h2 style="font-family:georgia">Activity Schedule</h2>
+			<table id = "clubTable">
+				<thead>
+					<tr>
+						<th scope="col">Type</th>
+						<th scope="col">Date</th>
+					</tr>
+				</thead>
+				<tbody id = "clubBody">
+					{%for event in events.clubEvents %}
+					<tr>
+						<td>{{event.activity}}</td>
+						<td>{{event.dates}}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

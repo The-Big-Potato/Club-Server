@@ -1,0 +1,20 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>Thanks for Signing up!</title>
+{% endblock %}
+    
+{% block main %}
+			<header>
+				<h1>Thanks for Signing up! - East Bay Mushroom Hunting Association</h1>
+			</header>
+			<h2>Name:</h2>
+				<p>{{name}}</p>
+			<h2>Email:</h2>
+				<p>{{email}}</p>
+			<h2>Level:</h2>
+				<p>{{exp}}</p>
+			<h2>Comments:</h2>
+				<p>{{comments}}</p>
+
+{% endblock %}

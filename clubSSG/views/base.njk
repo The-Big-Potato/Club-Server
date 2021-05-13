@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="{{ author }}">
+		<title>{{ pageTitle }}</title>
+		<link href="club.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+		{% include "nav.html" %}
+		</nav>
+		 {{ mainContent | safe }}
+	</body>
+</html>
+

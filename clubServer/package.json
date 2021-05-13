@@ -1,0 +1,21 @@
+{
+  "name": "clubserver",
+  "version": "1.0.0",
+  "description": "A fun server",
+  "main": "clubServer.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-sessions": "^1.0.6",
+    "expresss": "^0.0.0",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Someone",
+  "license": "ISC"
+}

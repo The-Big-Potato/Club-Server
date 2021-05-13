@@ -1,0 +1,23 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>{{title}}</title>
+{% endblock %}
+    
+{% block main %}
+			<header>
+				<h1  style="font-family:georgia">Login</h1>
+			</header>
+			<div id="constPop"></div>
+			<form action="./loginResult" method="post" id="loginForm">
+					<label>Email: </label>
+					<input type="email" name="email" id="email" required>
+					<label>Password: </label>
+					<input type="password" name="password" id="password" required>
+					<button type="submit">Log in</button>
+			</form>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

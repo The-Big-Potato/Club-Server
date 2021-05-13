@@ -1,0 +1,151 @@
+h1 {
+	text-align: center;
+	font-family: georgia;
+}
+
+h2 {
+	align-self: center;
+	font-family: georgia;
+}
+
+p {
+	align-self: center;
+	text-align: center;
+	padding: 5px;
+	margin: 20px;
+	margin-bottom: 50px;
+	hyphens: auto;
+	max-width: 75ch;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15px;
+	margin: 15px;
+	background-color: #bab86c;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 30px;
+	margin: 20px;
+	background-color: #eff4d8
+}
+
+nav {
+	align-self: center;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 2px;
+	width: 50%;
+	padding: 2px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #eb7a34;
+	background-color: #d8f4ee
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	text-align: center;
+	flex: 1;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav li {
+	align-text: center;
+	list-style-type: none;
+	flex: 1;
+	padding: 5px;
+	margin: 5px;
+}
+
+a:active {
+	background-color: #e0cda4;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	text-align: center;
+	font-size: 80%;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+table {
+	width: 80%;
+	align-self: center;
+	border-collapse: collapse;
+	background-color: #e5fab4
+}
+
+td,
+th {
+	border: 1px solid green;
+	padding: 0.5rem;
+}
+
+.popUpStyle {
+	padding: 5px;
+	margin: auto;
+	max-width: 400px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #eb7a34;
+	text-align: center;
+	background-color: #d8f4ee
+}
+
+input:invalid {
+	background-color: #ffdddd;
+}
+
+input:valid {
+	background-color: #ddffdd;
+}
+
+form {
+	display: grid;
+	align-self: center;
+	align-content: center;
+	grid-template-columns: 10em 20rem;
+	grid-row-gap: 0.5em;
+	grid-column-gap: 0.5em;
+	padding: 1.0rem;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+label {
+	justify-self: end;
+}
+
+ul {
+	align-self: center;
+}
+
+
+
+
+
+

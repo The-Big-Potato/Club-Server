@@ -1,0 +1,23 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>{{title}}</title>
+{% endblock %}
+    
+{% block main %}
+			<header>
+				<h1  style="font-family:georgia">Add Activity</h1>
+			</header>
+			<div id="constPop"></div>
+			<form action="/addingEvent" method="get">
+					<label>Name: </label>
+					<input type="name" name="name" id="name" required>
+					<label>Dates: </label>
+					<input type="dates" name="dates" id="dates" required>
+					<button type="submit">Add Event</button>
+			</form>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
